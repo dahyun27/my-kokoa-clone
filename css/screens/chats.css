@@ -1,0 +1,39 @@
+.user-components__profile--sm {
+  width: 70px;
+  height: 70px;
+  border-radius: 26px;
+}
+.chats__column {
+  padding: 0 0;
+}
+.chats__column:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.chat__time--no-notification {
+  padding-bottom: 23px;
+}
+.user-components__chats {
+  margin: 5px 0;
+  margin-right: 20px;
+  border-bottom: var(--main-border);
+  padding-bottom: 15px;
+}
+.chat__time {
+  font-size: 15px;
+}
+.chats__notification {
+  font-size: 15px;
+  background-color: tomato;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+.chats__notification {
+  position: unset;
+  animation: unset;
+  padding: 6px 9px;
+  font-size: 13px;
+  margin-top: 10px;
+}

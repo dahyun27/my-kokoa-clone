@@ -1,0 +1,205 @@
+.chat-body {
+  background-color: #abc1d1;
+  width: 100vw;
+  overflow: hidden;
+}
+.chat-status-bar {
+  background-color: #abc1d1;
+}
+.chat-alt-header__column span {
+  font-size: 23px;
+}
+.chat-alt-header__column:last-child span:last-child {
+  margin-left: 20px;
+}
+.chat-screen {
+  animation: fadeIn 0.7s ease-in-out;
+}
+.chat-time__container {
+  padding-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chat-time {
+  transform: translateY(25px);
+  background-color: rgba(0, 0, 0, 0.15);
+  color: white;
+  padding: 14px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  animation: chatTimeUp 1s linear forwards;
+}
+.chat__row {
+  transform: translateX(-100px);
+  animation: chatRowAnimation 1s cubic-bezier(0.22, 0.61, 0.32, 0.88) forwards;
+}
+.chat__row,
+.chat__row--owner {
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+}
+.chat__row--owner {
+  flex-direction: row-reverse;
+  animation: chatRowOwnerAni 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  animation-delay: 0.8s;
+  transform: translateX(500px);
+}
+.chat__column {
+  display: flex;
+}
+.chat__column img {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+}
+.chat__column:last-child {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 7px;
+}
+.chat__text {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  justify-content: flex-end;
+}
+.chat__title,
+.chat__column:last-child {
+  color: rgba(0, 0, 0, 0.5);
+}
+.chat__subtitle,
+.chat__text--owner {
+  display: flex;
+  justify-content: center;
+  margin-top: 9px;
+  background-color: white;
+  border-radius: 16px;
+  border-top-left-radius: 0;
+  padding: 13px 6px;
+  font-size: 18px;
+}
+.chat__text--owner {
+  background-color: var(--yellow);
+  margin-right: 20px;
+  border-radius: 16px;
+  border-top-right-radius: 0;
+  margin-left: 7px;
+  padding: 13px 15px;
+}
+.reply {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  transition: all 1s ease-in-out;
+}
+.reply__column {
+  display: flex;
+  text-align: center;
+}
+.reply i {
+  font-size: 23px;
+}
+.reply__column:first-child {
+  margin: 10px 0;
+  margin-left: 18px;
+}
+.reply__column:last-child {
+  width: 90%;
+}
+.reply__column input {
+  width: 100%;
+  margin: 5px;
+  margin-left: 10px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding: 0 7px;
+  transition: all 0.8s ease-in-out;
+}
+.reply__column input + i {
+  position: absolute;
+  right: 48px;
+  top: 10px;
+}
+.reply__column button {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  padding: 6px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+}
+.reply__column button > i {
+  font-size: 15px;
+}
+.reply__column:first-child i,
+.reply__column input + i {
+  color: rgba(0, 0, 0, 0.4);
+}
+.reply__column input::placeholder {
+  padding-left: 10px;
+}
+.reply .reply__column:first-child,
+.reply .reply__column input + i,
+.reply .reply__column button {
+  transition: opacity 0.3s ease-in-out;
+}
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .reply__column input + i,
+.reply:focus-within .reply__column button {
+  opacity: 0;
+}
+.reply:focus-within input {
+  transform: translateX(-6%) translateY(-80px);
+}
+.reply:focus-within {
+  transform: translateY(80px);
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes chatTimeUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+}
+@keyframes chatRowAnimation {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    /* transform: translateX(10px); */
+    transform: none;
+  }
+}
+@keyframes chatRowOwnerAni {
+  from {
+    transform: translateX(400px);
+  }
+  to {
+    transform: none;
+  }
+}

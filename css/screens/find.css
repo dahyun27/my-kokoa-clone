@@ -1,0 +1,140 @@
+.screen-header span:last-child {
+  position: relative;
+}
+.cog-dot {
+  bottom: 23px;
+  left: 34px;
+}
+.find-screen__icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+  padding: 0 10px;
+  padding-bottom: 35px;
+  border-bottom: var(--main-border);
+}
+.find-screen__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  text-align: center;
+}
+.find-screen__icon span {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.recommended-friends {
+  margin: 0 20px;
+  /* margin-top: 30px; */
+  border-bottom: var(--main-border);
+  color: var(--gray-color);
+  padding-top: 15px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  height: 270px;
+}
+.recommended-friends__text {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+.open-chat {
+  margin: 30px 20px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.open-chat__title {
+  color: var(--gray-color);
+}
+.open-chat__column {
+  display: flex;
+  justify-content: space-between;
+}
+.open-chat__column:first-child {
+  margin-bottom: 20px;
+}
+.open-chat__column:first-child span {
+  color: rgba(0, 0, 0, 0.4);
+}
+.open-chat__column:first-child span i {
+  font-size: 13px;
+}
+.open-chat__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.open-chat__members img {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+.bts__img {
+  position: relative;
+}
+.open-chat--heart {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  /* width: 30px; */
+  position: absolute;
+  bottom: 11px;
+  right: 5px;
+  font-size: 12px;
+  padding: 4px 5px;
+  border-radius: 16px;
+}
+.bts__img img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+.hashtags__title {
+  font-size: 17px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.hashtags__subtitle {
+  color: var(--gray-color);
+}
+.open-chat__members {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.members__bar {
+  width: 2px;
+  height: 15px;
+  margin: 0 6px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.open-chat--color-pink {
+  color: #ffb0e0;
+}
+@keyframes heartbeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.3);
+    color: tomato;
+  }
+  100% {
+    transform: none;
+  }
+}
+.open-chat--heart i:hover {
+  will-change: transform;
+  animation: heartbeat 1s linear infinite;
+}

@@ -1,0 +1,48 @@
+.settings-screen {
+  padding-bottom: 70px;
+}
+.settings__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  font-size: 18px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  /* font-weight: 600; */
+}
+.settings__column span {
+  margin-left: 15px;
+}
+.settings__column:last-child {
+  color: var(--gray-color);
+}
+.settings__row:nth-child(3) {
+  border-bottom: none;
+  padding-bottom: 40px;
+}
+.settings__row:last-child {
+  border-bottom: none;
+}
+.settings--border {
+  padding: 12px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+.new-notification__settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 9px;
+  font-weight: 600;
+  background-color: tomato;
+  color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  left: 30%;
+}
+.theme-notification {
+  left: 32%;
+}
