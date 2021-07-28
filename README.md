@@ -1,1 +1,1 @@
-kokoa clone
+my-kokoa-clone
